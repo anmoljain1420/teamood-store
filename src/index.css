@@ -1,0 +1,97 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@layer base {
+  body {
+    background-color: #FFFDF6;
+    color: #292316;
+    overflow-x: hidden;
+  }
+
+  h1, h2, h3, h4, .font-serif {
+    font-family: 'Playfair Display', Georgia, serif;
+  }
+}
+
+/* Custom warm scrollbar */
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: #FFF8ED;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #C98B4B;
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #6B3E26;
+}
+
+/* Glassmorphism effects with warm light tint */
+.glass-panel {
+  background: rgba(255, 253, 248, 0.85);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border: 1px solid rgba(201, 139, 75, 0.15);
+}
+
+.glass-card {
+  background: rgba(255, 248, 237, 0.7);
+  backdrop-filter: blur(8px);
+  -webkit-backdrop-filter: blur(8px);
+  border: 1px solid rgba(223, 175, 98, 0.2);
+}
+
+/* Luxury tea glow */
+.tea-gradient-glow {
+  background: radial-gradient(circle, rgba(201, 139, 75, 0.12) 0%, rgba(255, 248, 237, 0) 70%);
+}
+
+.steam-effect {
+  filter: blur(1px);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *, ::before, ::after {
+    animation-duration: 0.01ms !important;
+    animation-iteration-count: 1 !important;
+    transition-duration: 0.01ms !important;
+    scroll-behavior: auto !important;
+  }
+}
+
+
+/* Teamood mustard, white and charcoal identity */
+:root { --tm-ink:#292316; --tm-gold:#D9A514; --tm-paper:#FFFDF6; --tm-gold-dark:#A87908; }
+html { scroll-behavior:smooth; }
+body { background:var(--tm-paper); color:var(--tm-ink); }
+::selection { background:#D9A514; color:#292316; }
+@keyframes pageRise { from { opacity:0; transform:translateY(22px); } to { opacity:1; transform:translateY(0); } }
+/* Shared header/footer now use the same Teamood palette across every public route. */
+.glass-panel { background:rgba(255,253,246,.94); border-color:rgba(217,165,20,.25); }
+
+
+/* Teamood mustard, white and charcoal identity */
+:root { --tm-ink:#292316; --tm-gold:#D9A514; --tm-paper:#FFFDF6; --tm-gold-dark:#A87908; }
+html { scroll-behavior:smooth; }
+body { background:var(--tm-paper); color:var(--tm-ink); }
+::selection { background:#D9A514; color:#292316; }
+@keyframes pageRise { from { opacity:0; transform:translateY(22px); } to { opacity:1; transform:translateY(0); } }
+/* Shared header/footer now use the same Teamood palette across every public route. */
+.glass-panel { background:rgba(255,253,246,.94); border-color:rgba(217,165,20,.25); }
+
+
+/* Teamood mustard, white and charcoal identity */
+:root { --tm-ink:#292316; --tm-gold:#D9A514; --tm-paper:#FFFDF6; --tm-gold-dark:#A87908; }
+html { scroll-behavior:smooth; }
+body { background:var(--tm-paper); color:var(--tm-ink); }
+::selection { background:#D9A514; color:#292316; }
+@keyframes pageRise { from { opacity:0; transform:translateY(22px); } to { opacity:1; transform:translateY(0); } }
+/* Shared header/footer now use the same Teamood palette across every public route. */
+.glass-panel { background:rgba(255,253,246,.94); border-color:rgba(217,165,20,.25); }
